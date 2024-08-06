@@ -1,5 +1,7 @@
-import Teste from "./Test";
-import EstiloGlobal from "./styled";
+import EstiloGlobal, { Container } from "./styled";
+import Sidebar from "./containers/Sidebar";
+import Sobre from "./containers/Sobre";
+import Projeto from "./containers/Projeto";
 
 function App() {
 
@@ -7,7 +9,13 @@ function App() {
 
     <div>
       <EstiloGlobal />
-      <Teste />
+      <Container>
+        <Sidebar />
+          <main>
+            <Sobre />
+            <Projeto />
+          </main>
+      </Container>
 
     </div>
   );
