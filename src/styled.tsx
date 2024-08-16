@@ -8,21 +8,32 @@ const EstiloGlobal = createGlobalStyle`
 
   }
   body {
-    padding-top:80px; 
+    padding-top:80px;
+  }
+
+  @media (max-width: 768px) {
+    body {
+      padding-top:16px;
+    }
   }
 `;
 
 export default EstiloGlobal;
 
 export const Container = styled.div`
-  max-width: 900px; 
+  max-width: 900px;
   width:100%;
-  margin: 0 auto; 
-  display: grid; 
-  grid-template-columns: 128px auto; 
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 128px auto;
   column-gap: 56px;
 
+  @media (max-width: 768px) {
+    max-width:80%;
+    display:block;
+  }
+
   img {
-    width:100%; 
+    width:100%;
   }
 `
