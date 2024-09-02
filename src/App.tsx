@@ -1,7 +1,7 @@
 import EstiloGlobal, { Container } from "./styled";
 import Sidebar from "./containers/Sidebar";
 import Sobre from "./containers/Sobre";
-import Projeto from "./containers/Projeto";
+import Projetos from "./containers/Projetos";
 
 function App() {
 
@@ -13,7 +13,7 @@ function App() {
         <Sidebar />
           <main>
             <Sobre />
-            <Projeto />
+            <Projetos />
           </main>
       </Container>
 
